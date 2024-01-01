@@ -73,10 +73,12 @@
 
         /* Main content styles */
         main {
-            max-width: 1500px;
+            max-width: 1000px;
+            max-width: auto;
             margin: 20px auto;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: auto auto auto auto;
             grid-gap: 20px;
         }
 
@@ -85,6 +87,13 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             padding: 20px;
+        }
+
+        section img {
+            width: 180px;
+            height: 210px;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
 
         h2 {
@@ -113,6 +122,10 @@
 
         li {
             margin-bottom: 8px;
+        }
+
+        text {
+            font-size: 30;
         }
 
         /* Styling for social links in sections */
@@ -183,13 +196,34 @@
             left: 50%;
             transform: translateX(-50%);
         }
+        
+        .bubble2 {
+            position: relative;
+            background-color: #0099ff;
+            color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .bubble2:before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #0099ff;
+            border-radius: 50%;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     </style>
 </head>
 <body>
     <header>
         <!-- <img src="photo.jpg" alt="Dominic Couture"> -->
-        <h1>Dominic Couture</h1>
-        <p>“The most important victory is the one that is soon to arrive” ~ Enzo Ferrari</p>
+        <!-- <h1>Dominic Couture</h1>
+        <p>“The most important victory is the one that is soon to arrive” ~ Enzo Ferrari</p> -->
         <div class="social-links">
             <a href="https://github.com/mastermind-mayhem" target="_blank">GitHub</a>
             <a href="https://www.instagram.com/andromeda_adc/" target="_blank">Instagram</a>
@@ -200,11 +234,21 @@
     
     <main>
 
-        <!-- <section class="section projects">
+        <!-- <section class="section">
+            <h2>Education</h2>
+            <h3>Oyster River High School</h3>
+            <p><b>Durham, New Hampshire</b></p>
+            <p><i>Graduation Year: 2025</i></p>
+            <p>Detail-oriented web developer with 5 years of experience creating responsive websites and web applications. Proficient in HTML, CSS, JavaScript, React, and various web development frameworks. Strong problem-solving skills and a passion for clean, efficient code.</p>
+            
+            
+        </section>
+
+        <section class="section projects">
             <h2>Projects</h2>
             <div class="project">
-                <h4>E-commerce Website</h4>
-                <p>Developed a fully functional e-commerce platform using React and Node.js, integrated with a payment gateway for online transactions.</p>
+                <h4>FRC Robotics - Oyster River Overdrive (FRC 8410)</h4>
+                <p>Actively Participating in the software team in FRC Team 8410. Developed a base program for the team's swerve drive (See on <a href="https://github.com/mastermind-mayhem/SwerveTemplate" target="_blank">GitHub</a>)</p>
             </div>
             <div class="project">
                 <h4>Portfolio Website</h4>
@@ -213,44 +257,53 @@
         </section>
 
         <section class="section">
-            <h2>Introduction</h2>
-            <p>Detail-oriented web developer with 5 years of experience creating responsive websites and web applications. Proficient in HTML, CSS, JavaScript, React, and various web development frameworks. Strong problem-solving skills and a passion for clean, efficient code.</p>
-        </section>
-
-        <section class="section">
-            <h2>Education</h2>
-            <p>Detail-oriented web developer with 5 years of experience creating responsive websites and web applications. Proficient in HTML, CSS, JavaScript, React, and various web development frameworks. Strong problem-solving skills and a passion for clean, efficient code.</p>
-        </section>
-
-        <section class="section">
-            <h2>Experience</h2>
-            <p>Detail-oriented web developer with 5 years of experience creating responsive websites and web applications. Proficient in HTML, CSS, JavaScript, React, and various web development frameworks. Strong problem-solving skills and a passion for clean, efficient code.</p>
-        </section>
-
-        <section class="section">
-            <h2>Skills</h2>
-            <div class="skills">
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript (ES6+)</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>SQL</li>
-                    <li>Git</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Education</h2>
+            <h2>Technology Experience</h2>
             <section class="section bubble">
                 <h3>Bachelor of Science in Computer Science - University of Example (2015)</h3>
                 <p>Relevant coursework: Web Development, Software Engineering, Database Management</p>
             </section>
+        </section> -->
+
+        <section class="section">
+            <div style="display: grid;grid-template-columns: repeat(2, 1fr);grid-gap: 5px;">
+                <img src="photo.jpg" alt="Dominic Couture">
+                <div style="display: grid;grid-template-columns: repeat(1, 1fr);grid-gap: 20px;">
+                    <p><p><strong style="font-size: xx-large;">Dominic Couture</strong></p>
+                        “The most important victory is the one that is soon to arrive” 
+                        ~ Enzo Ferrari
+                        </p>
+                </div>
+            </div>
+            <div style="display: grid;grid-template-columns: repeat(2, 1fr);grid-gap: 20px;">
+                <div>
+                    <h2>Skills</h2>
+                    <div class="skills">
+                        <ul>
+                            <li>Python Fluency</li>
+                            <li>Java Fluency</li>
+                            <li>Git/Version Control</li>
+                            <li>Basic Ethical Hacking</li>
+                            <li>Mechanical Design</li>
+                            <li>Basic Electrical Wiring</li>
+                            <li>Advanced Physics</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2>Awards</h2>
+                    <h4>National Computer Science Honor Society Inductee</h4>
+                    <p>Inducted in 2022, first class of the chapter</p>
+
+                    <h4>High School Excellence In Robotics Engineering Award</h4>
+                    <p>Awarded for work in autonomous robot operation in FIRST Robotics team #8410</p>
+
+                    <h4>High School Outstanding Achievement in Computer Sciences Award</h4>
+                    <p>Awarded for contributions to the high school computer science department</p>
+                </div>
+            </div>
+            
         </section>
 
-    </main> -->
+    </main>
 </body>
 </html>
