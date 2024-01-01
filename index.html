@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dominic Couture</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #7C7F8E;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #015494;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 0 0 95% 95%;
+        }
+
+        header img {
+            width: 150px;
+            height: 180px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        header .social-links {
+            margin-top: 15px;
+        }
+
+        header .social-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            border: 2px solid #fff;
+            border-radius: 20px;
+            padding: 8px 15px;
+            font-size: 14px;
+        }
+
+        header .social-links a:hover {
+            background-color: #fff;
+            color: #007bff;
+        }
+
+        /* Main content styles */
+        main {
+            max-width: 1500px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .section {
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Styling for social links in sections */
+        .social-section a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-section a:hover {
+            color: #c4e3f3;
+        }
+
+        /* Additional styles for skills and projects */
+        .skills {
+            margin-bottom: 20px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills li {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 15px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .projects {
+            margin-bottom: 20px;
+        }
+        .projects .project {
+            background-color: #f9f9f9;
+            border-left: 4px solid #007bff;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .projects .project h4 {
+            margin-bottom: 5px;
+        }
+        .projects .project p {
+            margin-bottom: 10px;
+        }
+
+        /* New styles for bubble shapes */
+        .bubble {
+            position: relative;
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .bubble:before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #007bff;
+            border-radius: 50%;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <img src="photo.jpg" alt="Dominic Couture"> -->
+        <h1>Dominic P. Couture</h1>
+        <p>“The most important victory is the one that is soon to arrive” ~ Enzo Ferrari</p>
+        <div class="social-links">
+            <a href="https://github.com/mastermind-mayhem" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/andromeda_adc/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/dominic-couture-629813250/" target="_blank">LinkedIn</a>
+            <a href="mailto:d.paul.couture@gmail.com" target="_blank">Email</a>
+        </div>
+    </header>
+    
+    <main>
+
+        <!-- <section class="section projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h4>E-commerce Website</h4>
+                <p>Developed a fully functional e-commerce platform using React and Node.js, integrated with a payment gateway for online transactions.</p>
+            </div>
+            <div class="project">
+                <h4>Portfolio Website</h4>
+                <p>Designed and built a responsive portfolio website showcasing various web development projects and skills.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Introduction</h2>
+            <p>Detail-oriented web developer with 5 years of experience creating responsive websites and web applications. Proficient in HTML, CSS, JavaScript, React, and various web development frameworks. Strong problem-solving skills and a passion for clean, efficient code.</p>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <p>Detail-oriented web developer with 5 years of experience creating responsive websites and web applications. Proficient in HTML, CSS, JavaScript, React, and various web development frameworks. Strong problem-solving skills and a passion for clean, efficient code.</p>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+            <p>Detail-oriented web developer with 5 years of experience creating responsive websites and web applications. Proficient in HTML, CSS, JavaScript, React, and various web development frameworks. Strong problem-solving skills and a passion for clean, efficient code.</p>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <section class="section bubble">
+                <h3>Bachelor of Science in Computer Science - University of Example (2015)</h3>
+                <p>Relevant coursework: Web Development, Software Engineering, Database Management</p>
+            </section>
+        </section>
+
+    </main> -->
+</body>
+</html>
