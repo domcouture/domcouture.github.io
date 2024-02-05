@@ -73,9 +73,10 @@
 
         /* Main content styles */
         main {
-            max-width: 1000px;
-            max-width: auto;
+            /* max-width: 1000px; */
+            max-width: 2200px;
             margin: 20px auto;
+            align-items:flex-start;
             display: grid;
             /* grid-template-columns: repeat(3, 1fr); */
             grid-template-columns: auto auto auto auto;
@@ -152,7 +153,7 @@
             flex-wrap: wrap;
         }
         .skills li {
-            background-color: #007bff;
+            background-color: #015494;
             color: #fff;
             padding: 8px 12px;
             border-radius: 15px;
@@ -163,8 +164,8 @@
             margin-bottom: 20px;
         }
         .projects .project {
-            background-color: #f9f9f9;
-            border-left: 4px solid #007bff;
+            background-color: #c5c4c479;
+            border-left: 4px solid #015494;
             padding: 10px;
             margin-bottom: 15px;
         }
@@ -178,7 +179,7 @@
         /* New styles for bubble shapes */
         .bubble {
             position: relative;
-            background-color: #007bff;
+            background-color: #015494;
             color: #fff;
             padding: 20px;
             border-radius: 20px;
@@ -190,40 +191,17 @@
             position: absolute;
             width: 40px;
             height: 40px;
-            background-color: #007bff;
+            background-color: #015494;
             border-radius: 50%;
             top: -20px;
             left: 50%;
             transform: translateX(-50%);
         }
-        
-        .bubble2 {
-            position: relative;
-            background-color: #0099ff;
-            color: #fff;
-            padding: 20px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
-        .bubble2:before {
-            content: '';
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            background-color: #0099ff;
-            border-radius: 50%;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+
     </style>
 </head>
 <body>
     <header>
-        <!-- <img src="photo.jpg" alt="Dominic Couture"> -->
-        <!-- <h1>Dominic Couture</h1>
-        <p>“The most important victory is the one that is soon to arrive” ~ Enzo Ferrari</p> -->
         <div class="social-links">
             <a href="https://github.com/mastermind-mayhem" target="_blank">GitHub</a>
             <a href="https://www.instagram.com/andromeda_adc/" target="_blank">Instagram</a>
@@ -234,42 +212,11 @@
     
     <main>
 
-        <!-- <section class="section">
-            <h2>Education</h2>
-            <h3>Oyster River High School</h3>
-            <p><b>Durham, New Hampshire</b></p>
-            <p><i>Graduation Year: 2025</i></p>
-            <p>Detail-oriented web developer with 5 years of experience creating responsive websites and web applications. Proficient in HTML, CSS, JavaScript, React, and various web development frameworks. Strong problem-solving skills and a passion for clean, efficient code.</p>
-            
-            
-        </section>
-
-        <section class="section projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h4>FRC Robotics - Oyster River Overdrive (FRC 8410)</h4>
-                <p>Actively Participating in the software team in FRC Team 8410. Developed a base program for the team's swerve drive (See on <a href="https://github.com/mastermind-mayhem/SwerveTemplate" target="_blank">GitHub</a>)</p>
-            </div>
-            <div class="project">
-                <h4>Portfolio Website</h4>
-                <p>Designed and built a responsive portfolio website showcasing various web development projects and skills.</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Technology Experience</h2>
-            <section class="section bubble">
-                <h3>Bachelor of Science in Computer Science - University of Example (2015)</h3>
-                <p>Relevant coursework: Web Development, Software Engineering, Database Management</p>
-            </section>
-        </section> -->
-
         <section class="section">
             <div style="display: grid;grid-template-columns: repeat(2, 1fr);grid-gap: 5px;">
                 <img src="photo.jpg" alt="Dominic Couture">
                 <div style="display: grid;grid-template-columns: repeat(1, 1fr);grid-gap: 2px;">
                     <strong style="font-size: xx-large;">Dominic Couture</strong>
-                    <i>Routing Security Development Technician</i>
                     <p>“The most important victory is the one that is soon to arrive”        ~Enzo Ferrari</p>
                 </div>
             </div>
@@ -300,9 +247,56 @@
                     <p>Awarded for contributions to the high school computer science department</p>
                 </div>
             </div>
-            
         </section>
 
+        <section class="section">
+            <div style="display: grid;grid-template-columns: repeat(1, 1fr);grid-gap: 25px;">
+                <h2>Education</h2>
+                <div>
+                    <h3>Oyster River High School</h3>
+                    <p><b>Durham, New Hampshire</b></p>
+                    <p><i>August 2021 - Present Day (Class of 2025)</i></p>
+                    <p>During sophomore year, took on the responsibility of teaching a lesson to an intermediate programming class, while serving as an instructional aide for the Python-based curriculum for the entirety of a semester</p>
+                </div>
+                <h2></h2>
+                <div>
+                    <h3>Oyster River Middle School</h3>
+                    <p><b>Durham, New Hampshire</b></p>
+                    <p><i>August 2017 - June 2021</i></p>
+                    <p>Showcased strong math prowess and was active leader on the school's VEX robotics team, culminating in a notable presence in the state championship for a first year robotics experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Technology Experience</h2>
+            <section class="section bubble">
+                <h3>Routing Security Development Technician - UNH InterOperability Labratory</h3>
+                <i>June 2022 - Present Day</i>
+                <p>Youngest person on record to be hired. Professionally trained in Network Protection Products and Network Security Open testings under the NIST-AR1 standards. Can be trusted to work mainly autonomously and overcome most problems that arise.</p>
+            </section>
+            <section class="section bubble">
+                <h3>Software Lead - Oyster River Overdrive, FRC 8410</h3>
+                <i>October 2021 - October 2023</i>
+                <p>Dedicated efforts to train new team members, with no computer science experience, in Java while contributing to team success by building features such as customizable controller layout transitions. This demonstrates a commitment to nurturing the robotics team expertise alongside technical finesse.</p>
+            </section>
+        </section>
+
+        <section class="section projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h4>FRC Robotics - Oyster River Overdrive (FRC 8410)</h4>
+                <p>Actively Participating in the software team in FRC Team 8410. Developed a base program for the team's swerve drive (See on <a href="https://github.com/mastermind-mayhem/SwerveTemplate" target="_blank">GitHub</a>)</p>
+            </div>
+            <div class="project">
+                <h4>Portfolio Website</h4>
+                <p>Designed and built a responsive portfolio website showcasing various web development projects and skills.</p>
+            </div>
+            <div class="project">
+                <h4>Daskalos</h4>
+                <p>Selenium-Interfaced integration made to help high school students with time management.</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
