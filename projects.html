@@ -83,8 +83,10 @@
         main {
             /* max-width: 1000px; */
             max-width: auto;
-            margin: 20px 500px auto;
-            align-items: center;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            align-items: top;
             display: grid;
             /* grid-template-columns: repeat(3, 1fr); */
             grid-template-columns: auto auto auto auto;
@@ -103,6 +105,28 @@
             height: 210px;
             border-radius: 50%;
             margin-bottom: 20px;
+            margin-right: 0px;
+        }
+
+        a {
+            color: #007bff;
+        }
+
+        .click a {
+            background-color: #015494;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 15px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            border: 2px solid #015494; 
+        }
+
+        .click a:hover {
+            background-color: #fff;
+            color: #015494;
+            border: 2px solid #015494; 
         }
 
         h2 {
@@ -126,7 +150,7 @@
 
         ul {
             list-style-type: none;
-            padding-left: 0;
+            padding-left: autos;
         }
 
         li {
@@ -135,10 +159,6 @@
 
         text {
             font-size: 30;
-        }
-
-        a {
-            color: #007bff;
         }
 
         /* Styling for social links in sections */
@@ -165,15 +185,16 @@
             flex-wrap: wrap;
         }
         .skills li {
-            background-color: #015494;
-            color: #fff;
+            background-color: #fff;
+            color: #007bff;
             padding: 8px 12px;
             border-radius: 15px;
             margin-right: 10px;
             margin-bottom: 10px;
+            border: 2px solid #007bff;
         }
         .projects {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         .projects .project {
             background-color: #c5c4c479;
