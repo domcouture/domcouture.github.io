@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>dom-couture</title>
+    <title>dom.couture</title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <style>
         /* Resetting default margin and padding */
@@ -45,22 +45,12 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             text-decoration: none;
-            border-radius: 20px;
-            border: 2px solid #fff;
             padding: 8px 40px;
         }
 
         header h1 a:hover {
-            color: #015494;
-            font-size: 36px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-decoration: none;
-            border-radius: 20px;
-            border: 2px solid #015494;
-            padding: 8px 40px;
-            background-color: #fff;
+            font-size: 37px;
+            padding: 6px 40px;
         }
 
         header p {
@@ -93,7 +83,9 @@
         main {
             /* max-width: 1000px; */
             max-width: auto;
-            margin: 20px 20px auto;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
             align-items: top;
             display: grid;
             /* grid-template-columns: repeat(3, 1fr); */
@@ -113,6 +105,28 @@
             height: 210px;
             border-radius: 50%;
             margin-bottom: 20px;
+            margin-right: 0px;
+        }
+
+        a {
+            color: #007bff;
+        }
+
+        .click a {
+            background-color: #015494;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 15px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            border: 2px solid #015494; 
+        }
+
+        .click a:hover {
+            background-color: #fff;
+            color: #015494;
+            border: 2px solid #015494; 
         }
 
         h2 {
@@ -136,7 +150,7 @@
 
         ul {
             list-style-type: none;
-            padding-left: 0;
+            padding-left: autos;
         }
 
         li {
@@ -171,15 +185,16 @@
             flex-wrap: wrap;
         }
         .skills li {
-            background-color: #015494;
-            color: #fff;
+            background-color: #fff;
+            color: #007bff;
             padding: 8px 12px;
             border-radius: 15px;
             margin-right: 10px;
             margin-bottom: 10px;
+            border: 2px solid #007bff;
         }
         .projects {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         .projects .project {
             background-color: #c5c4c479;
@@ -220,7 +235,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="index.html">dom-couture</a></h1>
+        <h1><a href="index.html">dom.couture</a></h1>
         <div class="social-links">
             <a href="https://github.com/mastermind-mayhem" target="_blank">GitHub</a>
             <a href="https://www.instagram.com/andromeda_adc/" target="_blank">Instagram</a>
@@ -230,13 +245,14 @@
     </header>
     
     <main>
+        <section></section>
 
         <section class="section">
             <div style="display: grid;grid-template-columns: repeat(2, 1fr);grid-gap: 5px;">
                 <img src="photo.jpg" alt="Dom Couture">
                 <div style="display: grid;grid-template-columns: repeat(1, 1fr);grid-gap: 2px;">
                     <strong style="font-size: xx-large;">Dom Couture</strong>
-                    <p>“The most important victory is the one that is soon to arrive”        ~Enzo Ferrari</p>
+                    <p>“The most important victory is the one that is soon to arrive” ~Enzo Ferrari</p>
                 </div>
             </div>
             <div style="display: grid;grid-template-columns: repeat(2, 1fr);grid-gap: 20px;">
@@ -251,19 +267,20 @@
                             <li>Mechanical Design</li>
                             <li>Basic Electrical Wiring</li>
                             <li>Advanced Physics</li>
+                            <li>French Fluency</li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <h2>Awards</h2>
                     <h4>National Computer Science Honor Society Inductee</h4>
-                    <p>Inducted in 2022, first class of the chapter</p>
+                    <p>Inducted in 2022, first class of the chapter.</p>
 
                     <h4>High School Excellence In Robotics Engineering Award</h4>
-                    <p>Awarded for work in autonomous robot operation in FIRST Robotics team #8410</p>
+                    <p>Awarded for work in autonomous robot operation in FIRST Robotics team #8410.</p>
 
                     <h4>High School Outstanding Achievement in Computer Sciences Award</h4>
-                    <p>Awarded for contributions to the high school computer science department</p>
+                    <p>Awarded for contributions to the high school computer science department.</p>
                 </div>
             </div>
         </section>
@@ -282,9 +299,9 @@
                 <h4>Daskalos</h4>
                 <p>Selenium-Interfaced integration made to help high school students with time management. Programmed almost entirely in python with a batch file integration into student laptops makes it accessible via hot keys, taskbars and desktop. The program takes student grades then calculates and produces an answer of how the student should spend their time studying</p>
             </div>
-            <div class="skills">
-                <li><a href="projects.html" style="color: #fff; text-decoration: underline; font-size: 20px;">See More</a></li>
-            </div>
+            <div class="click">
+                <a href="projects.html">See More</a>
+            </div>            
         </section>
     </main>
 </body>
