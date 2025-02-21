@@ -294,12 +294,12 @@ h2::after {
 	font-weight: 400;
 
 	::marker {
-		content: ">";
+		content: "-";
 		color: rgb(132, 202, 255);
 	}
 
 	ul ::marker {
-		content: ">>";
+		content: "";
 	}
 }
 
