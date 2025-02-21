@@ -1,7 +1,7 @@
 :root {
-    --gradient-1: linear-gradient(120deg, #a6c0fe 0%, #c93d8cc5 100%);
-    --gradient-2: linear-gradient(120deg, #8479fc 0%, #96e5e6 100%);
-    --gradient-3: linear-gradient(120deg, #5386c9 0%, #77b8d9 100%);
+    --gradient-1: linear-gradient(120deg, #162092 0%, #14a5c9c5 100%);
+    --gradient-2: linear-gradient(120deg, #5c54b3 0%, #649798 100%);
+    --gradient-3: linear-gradient(120deg, #5e7da7 0%, #2279a5 100%);
     --text-color: #2d3436;
     --light-text: #636e72;
 }
